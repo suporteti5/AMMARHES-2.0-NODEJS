@@ -12,7 +12,7 @@ app.use(cors());
 
 sgMail.setApiKey("COLOCAR APIKEY AQUI" /* colocar a api key */);
 
-app.post("/enviar-demail", (req, res) => {
+app.post("/enviar-email", (req, res) => {
   const { nome, email, assunto, mensagem } = req.body;
 
   const msg = {
